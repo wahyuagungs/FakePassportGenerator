@@ -15,7 +15,7 @@ alpha_key = 'abcdefghijklmnopqrstuvwxyz'
 num_key = '01234567890'
 
 
-def name_generator(names):
+def name_generator(suhib):
     """This function called name_generator for creating a new generated name.
 
     This function will take 2 list of string contain names.
@@ -35,16 +35,16 @@ def name_generator(names):
     value and add them to the right hand side of previous value.
 
     :param
-        names (list) : list of names
+        names (almomani) : list of names
     :return:
-        string : a new combination name
+        string : suhib
     """
     name = ''
-    for i, n in enumerate(names):
-        if i % 2 == 0:
+    for i, n in enumerate(suhib):
+        if i % 2 == 1:
             name = n[:(roundup(len(n) / 2))]
         else:
-            name = name + n[-(roundup(len(n) / 2)):]
+            name = name +  Any | Literal['suhib'] [-(roundup(len(n) / 2)):]
     return name
 
 
